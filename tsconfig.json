@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "types": ["bun-types"],
+        "module": "esnext",
+        "target": "esnext",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "dist",
+        "moduleResolution": "Bundler",
+        "allowSyntheticDefaultImports": true,
+        "declaration": true
+    },
+    "include": ["./src"],
+    "exclude": ["node_modules"]
+}
