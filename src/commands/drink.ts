@@ -54,7 +54,7 @@ export default new TextCommand({
         const lastDrink = user.getLastDrinkEntry();
         const now = Date.now();
 
-        if (lastDrink !== undefined && lastDrink.date < now - 30 * 60 * 1000) {
+        if (lastDrink !== undefined && lastDrink.date > now - 30 * 60 * 1000) {
             return ctx.reply("Пить можно только раз в полчаса");
         }
 
